@@ -1,0 +1,869 @@
+/* lånt fra denne hjemmeside, for at resette min hjemmeside på forskellige browsere
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/*min kode*/
+
+* {
+    text-decoration: none;
+}
+
+main {
+    padding-top:100px ;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    position: fixed;
+    background-color: #f86b34;
+    width: 100%;
+    height: 100px;
+}
+ .main-logo{
+   
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-top: 0;
+ }
+header .header-brand  {
+    font-family: 'Courier New', Courier, monospace;   /*skal skiftes til valgte typografi*/
+    font-size: 40px;
+    font-weight: 900;
+    color: black; 
+    display: block;
+    margin: 0 auto;
+    text-align: center; 
+    padding: 20px 0;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+ display: inline-block;
+ list-style: none;
+ padding: 0 16px;
+
+}
+
+header nav ul li a {
+    font-family: 'Courier New', Courier, monospace;   /*skal skiftes til valgte typografi se på font weight*/
+    font-size: 16px;
+    color: black; 
+    text-transform: uppercase; 
+}
+
+/*min kode*/
+
+.index-start {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.stor-start {
+display: table-cell;
+vertical-align: middle;
+}
+
+.index-start  h2{
+    font-family: Stencil;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 70px;
+    text-shadow: 3px 3px 7px black;
+    color:white;
+    text-align: center;
+}
+
+.index-start  h1{
+    font-family: Garamond;
+    font-size: 28px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 40px;
+    text-shadow: 3px 3px 7px black;
+    color:white;
+    text-align: center;
+}
+
+
+
+/*animation*/
+
+#slider{
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider{
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+/*Video*/
+
+.vid-pac{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-top: 20px;
+}
+
+.vid-pac video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.vid-klima{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-top: 20px;
+}
+
+.vid-klima video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Content kodning*/
+.portifolio-titel {
+    margin-top: 25px;
+    font-family: Stencil;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    
+}
+
+.arbejde-titel {
+    font-family: Stencil;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
+.arbejde-img {
+    display: flex;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 50%;
+    margin-bottom: 10px;
+
+}
+
+.video { 
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 75%;
+    
+}
+.arbejde-text {
+    font-family: Garamond;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    margin: 10px;  
+    padding: 4px;
+}
+
+.text-box {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #f86b34;
+}
+
+.text-box-telf {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #f86b34;
+    margin-bottom: 0px;
+}
+
+.text-box-video {
+    display: none;  
+}
+
+.design-billeder {
+    display: flex;
+    width: 100%;
+}
+
+.design-billeder img{
+    width: 30%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.blue-box {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    background-color: #014394;
+    
+}
+
+/*om mig koden*/
+.om_mig {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #f86b34;
+}
+
+.om_mig_img{
+    display: flex;
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    margin-bottom: 20px ;
+}
+.om_mig_text {
+    font-family: Garamond;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    margin: 10px;  
+}
+ 
+/*kontakt mig*/
+.kontakt-section{
+    background: url(img/kontakt.png) no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.kontakt-section h5{
+    text-align: center;
+    color: white;
+    font-size: 55px;
+    font-family: Stencil;
+}
+
+.ramme{
+    width: 100px;
+    height: 10px;
+    background: #014394;
+    margin: 40px auto;
+}
+
+.kontakt-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.kontakt-form-text{
+    display: block;
+    font-family: Garamond;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #565555;
+    padding: 20px 40px;
+    outline: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.kontakt-form-text:focus{
+box-shadow: 0 0 10px 4px #f86b34; 
+}
+
+textarea.kontakt-form-text{
+    resize: none;
+    height: 120px;
+}
+
+.kontakt-from-knap{
+    float: right;
+    width: 50px;
+    border: 0;
+    background: #565555;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.kontakt-from-knap:hover {
+    background: #f86b34;
+}
+
+
+/*footer styling */
+
+footer {
+        width: calc(100% - 80px);
+        padding: 40px 40px;
+        margin-top: 20px;
+        background-color: #f86b34 ;
+        overflow: hidden;
+}
+footer ul {
+width: fit-content;
+float: left;
+padding-left: 20px;
+
+}
+
+footer ul li {
+display: block;
+list-style: none;
+}
+
+footer ul li a {
+    font-family: Garamond;
+    font-size: 24px;
+    color:white;   
+    line-height: 50px;
+        
+}
+.footer-logo {
+    display: none;
+}
+
+.footer-sm {
+width: 50px;
+float: right;
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    display: flex;
+    font-family: Stencil;
+    font-size: 14px;
+    background-color: #f86b34;
+}
+ .copyright-text{
+     text-align: right;
+ }
+
+
+@media only screen and (min-width: 800px){
+
+        header .header-brand  {
+            margin: 31px 0;
+            text-align: left;
+            line-height: 38px; 
+            padding: 0px 20px 0px 40px;
+            float: left; 
+        }
+    
+        header nav ul {
+            margin: 0;
+            float: left;
+            margin: 20px 0px 0px 20px;
+        }
+        
+        header nav ul li {
+        }
+        
+        header nav ul li a {
+            line-height: 60px;
+        }
+        .wrapper{
+            width: 950px;
+            margin: 0 auto;
+    
+        }
+        .index-start {
+            height: 350px;
+            
+        }
+        .index-start  h1{
+        display: block;
+        width: 560px;
+        margin: 0 auto;
+        }
+        .arbejde-img{
+            width: 45%;
+        }
+    
+        .om_mig_text {
+            font-family: Garamond;
+            font-size: 24px;
+            color: black;
+            text-align: center;
+            margin: 10px;  
+        }
+
+        .text-box-video {
+            display: flex;
+            width: 100%;
+            height: auto;
+            background-color: #f86b34;
+            float: right;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            }
+        
+            .text-box-telf {
+            display: none;
+            }
+            
+     
+    /*animation*/
+
+    #slider{
+    overflow: hidden;
+    width: 40%;
+    float: left;
+    margin-left: 30%;
+    margin-right: 50%;
+    margin-bottom: 20px;
+    display: block;
+    
+    }
+
+    #slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+    }
+
+    #slider figure img{
+    width: 20%;
+    float: left;
+    }
+
+    @keyframes slider{
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+    }        
+        
+}
+
+
+@media only screen and (min-width: 1024px)
+{
+    header .header-brand  {
+        margin: 31px 0;
+        text-align: left;
+        line-height: 38px; 
+        padding: 0px 20px 0px 40px;
+        
+        float: left; 
+    }
+
+    header nav ul {
+        margin: 0;
+        float: left;
+        margin: 20px 0px 0px 20px;
+    }
+    
+    header nav ul li {
+    }
+    
+    header nav ul li a {
+        line-height: 60px;
+    }
+    .wrapper{
+        width: 100%;
+        margin: 0 auto;
+
+    }
+    .index-start {
+        height: 350px;
+        
+    }
+    .index-start  h1{
+    display: block;
+    width: 560px;
+    margin: 0 auto;
+    }
+    
+    
+    
+    footer ul {
+        width: fit-content;
+        float: left;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+    .footer ul li a {
+        font-family: Stencil;
+        font-size: 24px;
+        color:white;   
+        line-height: 50px;
+            
+    }
+
+    /*Content kodning*/
+    .portifolio-titel {
+    margin-top: 25px;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    
+    }
+
+    .arbejde-titel {
+    font-size: 55px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    }
+    .arbejde-img {
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 30%;
+    float: left;
+    margin-left: auto;
+    margin-bottom: 0px;
+    } 
+    
+    .video { 
+    display: flex;
+    margin-top: 0px;
+    width: 40%;
+    float: left;
+    }
+    .arbejde-text {
+    font-family: Garamond;
+    font-size: 40px;
+    font-weight: 100;
+    color: black;
+    text-align: center;
+    margin: 10px;  
+    }
+
+    .text-box {
+    display: flex;
+    width: 50%;
+    height: auto;
+    background-color: #f86b34;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    }
+
+    .text-box-video {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #f86b34;
+    float: right;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    }
+
+    .text-box-telf {
+    display: none;
+    }
+
+    .om_mig_text{
+      font-size: 40px;  
+    }
+    /*animation*/
+
+    #slider{
+    display: block;
+    overflow: hidden;
+    width: 75%;
+    margin-left: 12.5%;
+    border-radius: 0%;
+    margin-right: 50%; 
+    }
+
+    .kontakt_mig{
+    font-family: Stencil;
+        font-size: 105px;
+    }
+    #slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+    }
+
+    #slider figure img{
+    width: 20%;
+    float: left;
+    }
+
+    @keyframes slider{
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+    }
+
+    .video 
+    {
+    margin-left: 40px;
+    }
+}
+
+/*Video*/
+
+.vid-pac{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-top: 20px;
+}
+
+.vid-pac video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.vid-klima{
+    display: flex;
+    width: 45%;
+    padding-bottom: 23%;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.vid-klima video{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+}
